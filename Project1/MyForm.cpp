@@ -28,8 +28,9 @@ void Project1::MyForm::maintcp()
 	motorspeed ms[18];
 	setMotorspeeds(ms); 
 
+	//connect to the robot
 	SOCKET client;
-	do{
+	do{ //attempt to connect until successfully connected
 		client = Connect();
 		this->tcpstatus->Text = "disconnected, attemting to reconnect";
 	} while(client == -1);
