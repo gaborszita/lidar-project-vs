@@ -1,0 +1,4 @@
+#ifndef _OPENCL_CONFIG_H
+#define _OPENCL_CONFIG_H
+#define CL_TARGET_OPENCL_VERSION 120
+#endif
